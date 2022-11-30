@@ -1,18 +1,6 @@
-import { AppProps } from 'next/app';
-import Head from 'next/head';
-import './styles.css';
+import 'focus-visible'
+import '../styles/global.css'
 
-function CustomApp({ Component, pageProps }: AppProps) {
-  return (
-    <>
-      <Head>
-        <title>Welcome to mkt-mfe-sampling-tree-shell!</title>
-      </Head>
-      <main className="h-full">
-        <Component {...pageProps} />
-      </main>
-    </>
-  );
+export default function App({ Component, pageProps }) {
+  return <Component {...pageProps} />
 }
-
-export default CustomApp;
