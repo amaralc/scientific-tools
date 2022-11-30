@@ -1,0 +1,32 @@
+{
+  "name": "mkt-mfe-sampling-tree-shell-e2e",
+  "$schema": "../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/mkt-mfe-sampling-tree-shell-e2e/src",
+  "projectType": "application",
+  "targets": {
+    "e2e": {
+      "executor": "@nrwl/cypress:cypress",
+      "options": {
+        "cypressConfig": "apps/mkt-mfe-sampling-tree-shell-e2e/cypress.config.ts",
+        "devServerTarget": "mkt-mfe-sampling-tree-shell:serve:development",
+        "testingType": "e2e"
+      },
+      "configurations": {
+        "production": {
+          "devServerTarget": "mkt-mfe-sampling-tree-shell:serve:production"
+        }
+      }
+    },
+    "lint": {
+      "executor": "@nrwl/linter:eslint",
+      "outputs": ["{options.outputFile}"],
+      "options": {
+        "lintFilePatterns": [
+          "apps/mkt-mfe-sampling-tree-shell-e2e/**/*.{js,ts}"
+        ]
+      }
+    }
+  },
+  "tags": [],
+  "implicitDependencies": ["mkt-mfe-sampling-tree-shell"]
+}
