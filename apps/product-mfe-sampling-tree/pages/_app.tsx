@@ -1,5 +1,6 @@
 import { AppProps } from 'next/app';
 import Head from 'next/head';
+import 'reactflow/dist/style.css';
 import './styles.css';
 
 function CustomApp({ Component, pageProps }: AppProps) {
