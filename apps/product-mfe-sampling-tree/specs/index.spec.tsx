@@ -1,11 +1,10 @@
-import React from 'react';
 import { render } from '@testing-library/react';
 
-import Index from '../pages/index';
+import Tree from '../pages/tree';
 
-describe('Index', () => {
+describe('Tree', () => {
   it('should render successfully', () => {
-    const { baseElement } = render(<Index />);
+    const { baseElement } = render(<Tree />);
     expect(baseElement).toBeTruthy();
   });
 });
