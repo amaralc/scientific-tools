@@ -9,3 +9,4 @@ This project is a collection of tools that help scientists to implement the scie
 Plan and visualize rounds of experimentation from any device, without downloading a new app.
 
 - Website: sampling-tree.com (mkt-mfe-sampling-tree-shell);
+- BrowserApp: app.sampling-tree.com (product-mfe-sampling-tree-shell);
