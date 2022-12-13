@@ -1,3 +1,16 @@
+@import 'tailwindcss/base';
+@import 'tailwindcss/components';
+@import 'tailwindcss/utilities';
+@layer components {
+  #__next {
+    @apply h-full;
+  }
+  html,
+  body {
+    @apply h-full;
+  }
+}
+
 html {
   -webkit-text-size-adjust: 100%;
   font-family: ui-sans-serif, system-ui, -apple-system, BlinkMacSystemFont,
